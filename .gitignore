@@ -1,0 +1,31 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+*.spec
+
+# Node / frontend
+node_modules/
+.next/
+out/
+coverage/
+
+# Local files and generated outputs
+.env
+.env.*
+uploads/
+outputs/
+tmp/
+*.log
+
+# Keep curated sample files in version control when they are useful for tests.
