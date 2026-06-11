@@ -28,6 +28,21 @@ Ama-Pro/
 
 ## Current Status
 
-This repository currently contains the initial project skeleton only.
+The repository now includes the first frontend shell in `apps/web`.
+It uses mock data for the homepage, workspace, tool pages, and task states.
 Real tool modules will be added later under `tools/`.
 
+## Frontend Quick Start
+
+```text
+cd apps/web
+npm install
+npm run dev
+```
+
+Key routes:
+
+- `/` public homepage and access entry
+- `/app` mock workspace
+- `/app/tools/ads-diagnosis` first available mock tool page
+- `/app/tools/listing-builder` planned module placeholder

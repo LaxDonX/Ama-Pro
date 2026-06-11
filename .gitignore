@@ -16,6 +16,8 @@ build/
 
 # Node / frontend
 node_modules/
+.npm-cache/
+*.tsbuildinfo
 .next/
 out/
 coverage/
