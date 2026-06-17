@@ -440,9 +440,9 @@ function ToolRow({ tool, navigate }: { tool: ToolDefinition; navigate: (href: st
   );
 }
 
-function TaskList({ taskItems }: { taskItems: Task[] }) {
+function TaskList({ compact = false, taskItems }: { compact?: boolean; taskItems: Task[] }) {
   return (
-    <div className="task-list">
+    <div className={compact ? "task-list compact" : "task-list"}>
       {taskItems.map((task) => {
         const tool = tools.find((item) => item.id === task.toolId);
 
@@ -510,7 +510,7 @@ function ToolPage({ navigate, toolId }: { navigate: (href: string) => void; tool
             <strong>{relatedTasks.length || "Mock"}</strong>
           </div>
           {relatedTasks.length ? (
-            <TaskList taskItems={relatedTasks} />
+            <TaskList compact taskItems={relatedTasks} />
           ) : (
             <p className="muted">
               This module is planned. Once the interface is connected, tasks will appear here.

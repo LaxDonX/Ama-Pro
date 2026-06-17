@@ -814,6 +814,23 @@ select {
   background: #fbfcf9;
 }
 
+.task-list.compact .task-row {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  min-height: 4.9rem;
+  padding: 1rem;
+}
+
+.task-list.compact .task-progress {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  width: 100%;
+}
+
+.task-list.compact .status-label {
+  justify-self: end;
+}
+
 .task-row strong,
 .task-row span {
   display: block;
